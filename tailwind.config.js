@@ -7,7 +7,6 @@ module.exports = {
         kanit: 'Kanit',
         Montserrat: 'Montserrat',
         Archivo: 'Archivo Black',
-        Roboto: 'Roboto'
       },
     },
   },
