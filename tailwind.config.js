@@ -6,7 +6,8 @@ module.exports = {
       fontFamily:{
         kanit: 'Kanit',
         Montserrat: 'Montserrat',
-        Archivo: 'Archivo Black'
+        Archivo: 'Archivo Black',
+        Roboto: 'Roboto'
       },
     },
   },
