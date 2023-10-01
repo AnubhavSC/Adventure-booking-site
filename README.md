@@ -5,12 +5,14 @@ This website is built using Tailwind CSS, HTML, and a small amount of JavaScript
 
 ## Installation
 
-Download code with git
+Download code with git:
 
 ```bash
   git clone https://github.com/AnubhavSC/Adventure-booking-site
   cd Adventure-booking-site
-
-  npx tailwindcss -i ./css/input.css -o ./css/output.css --watch 
 ```
-    
+Command to use tailwind CLI:
+
+```bash
+    npx tailwindcss -i ./css/input.css -o ./css/output.css --watch 
+```
