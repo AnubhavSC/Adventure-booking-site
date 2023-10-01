@@ -9,105 +9,120 @@
 </head>
 
 <body>
-    <header class="flex flex-col h-[77vh] md:h-[48rem] background">
-        <nav class="bg-white md:bg-transparent">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
-                <div class=" ml-5 p-4">
-                    <a href="#" class="flex items-center"><span
-                            class="self-center text-[1.5rem] md:text-[2rem] font-kanit whitespace-nowrap uppercase text-black md:text-white">outdoor</span></a>
-                    <h2 class="ml-1 uppercase text md:text-[1.3rem] font-Nanum text-black md:text-white mt-[-0.7rem]">
-                        Adventure</h2>
-                </div>
-                <button onclick="toggleMenu()"
-                    class="md:hidden bg-[#fb2056] mr-5 h-[2.5rem] w-[2.5rem] rounded-sm  menu-button" type="button">
-                    <div class="m-auto w-[50%]">
-                        <span class="sr-only text-white ">menu</span>
-                        <svg class="w-5 h-5 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="none" viewBox="0 0 17 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 1h15M1 7h15M1 13h15" />
-                        </svg>
+    <div id="preloader" class="fixed inset-0 flex flex-col justify-center items-center bg-white z-50">
+        <!-- Loading Animation (Spinner) -->
+        <div id="spinner" class="animate-spin rounded-full h-16 w-16 border-t-4 border-[#fb2056]"></div>
+    </div>
+    <div id="content" class="hidden">
+        <header class="flex flex-col h-[77vh] md:h-[48rem] background">
+            <nav class="bg-white md:bg-transparent">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
+                    <div class=" ml-5 p-4">
+                        <a href="#" class="flex items-center"><span
+                                class="self-center text-[1.5rem] md:text-[2rem] font-kanit whitespace-nowrap uppercase text-black md:text-white">outdoor</span></a>
+                        <h2
+                            class="ml-1 uppercase text md:text-[1.3rem] font-Nanum text-black md:text-white mt-[-0.7rem]">
+                            Adventure</h2>
                     </div>
-                </button>
-                <div class="hidden border-t md:border-t-0 w-full md:block md:w-auto menu">
-                    <ul
-                        class="space-y-4 mt-3 md:mt-0 md:space-y-0 md:flex md:space-x-8 items-center md:font-mono text-gray-700 text-sm font-normal md:text-[17px] md:text-white">
-                        <li class="border-b md:border-b-0 h-[2rem]"><a class="ml-9 md:ml-0" href="#">Home</a></li>
-                        <li class="border-b md:border-b-0 h-[2rem]"><a class="ml-9 md:ml-0" href="about.html">About</a>
-                        </li>
-                        <li class="border-b md:border-b-0 h-[2rem]"><a class="ml-9 md:ml-0"
-                                href="service.html">Services</a></li>
-                        <li class="border-b md:border-b-0 h-[2rem]"><a class="ml-9 md:ml-0" href="#">Contact</a></li>
-                        <button class="hidden md:block bg-[#fb2056] h-10 text-white rounded-full w-[8rem]"
-                            style="margin-top: -10px;"><a class="uppercase text-lg font-bold">Book now</a></button>
-                    </ul>
+                    <button onclick="toggleMenu()"
+                        class="md:hidden bg-[#fb2056] mr-5 h-[2.5rem] w-[2.5rem] rounded-sm  menu-button" type="button">
+                        <div class="m-auto w-[50%]">
+                            <span class="sr-only text-white ">menu</span>
+                            <svg class="w-5 h-5 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="hidden border-t md:border-t-0 w-full md:block md:w-auto menu">
+                        <ul
+                            class="space-y-4 mt-3 md:mt-0 md:space-y-0 md:flex md:space-x-8 items-center md:font-mono text-gray-700 text-sm font-normal md:text-[17px] md:text-white">
+                            <li class="border-b md:border-b-0 h-[2rem]"><a class="ml-9 md:ml-0" href="#">Home</a></li>
+                            <li class="border-b md:border-b-0 h-[2rem]"><a class="ml-9 md:ml-0"
+                                    href="about.html">About</a>
+                            </li>
+                            <li class="border-b md:border-b-0 h-[2rem]"><a class="ml-9 md:ml-0"
+                                    href="service.html">Services</a></li>
+                            <li class="border-b md:border-b-0 h-[2rem]"><a class="ml-9 md:ml-0" href="#">Contact</a>
+                            </li>
+                            <button class="hidden md:block bg-[#fb2056] h-10 text-white rounded-full w-[8rem]"
+                                style="margin-top: -10px;"><a class="uppercase text-lg font-bold">Book now</a></button>
+                        </ul>
+                    </div>
+
                 </div>
+            </nav>
 
-            </div>
-        </nav>
-
-        <section class="flex items-center justify-center h-[34rem]">
+            <section class="flex items-center justify-center h-[34rem]">
+                <div>
+                    <div class="text-center">
+                        <h2 class="text-white font-extrabold text-[20px] md:text-[1.5rem] font-Montserrat">Explore The
+                            Colorful World</h2>
+                        <div class="border-b-2 mt-[0.3rem] border-[#fb2056] w-[5rem] mx-auto"></div>
+                        <h1 class="text-white mx-2 text-[1.9rem] md:text-[4rem] uppercase font-Montserrat">A WONDERFUL
+                            GIFT
+                        </h1>
+                        <div class="mt-4">
+                            <button class="bg-[#fb2056] h-12 text-white rounded-full w-[11rem]">
+                                <a class="uppercase text-[14px] font-bold">learn more</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <section class="bg-gray-100 h-[12rem] flex justify-center items-center text-center">
             <div>
-                <div class="text-center">
-                    <h2 class="text-white font-extrabold text-[20px] md:text-[1.5rem] font-Montserrat">Explore The
-                        Colorful World</h2>
-                    <div class="border-b-2 mt-[0.3rem] border-[#fb2056] w-[5rem] mx-auto"></div>
-                    <h1 class="text-white mx-2 text-[1.9rem] md:text-[4rem] uppercase font-Montserrat">A WONDERFUL GIFT
-                    </h1>
-                    <div class="mt-4">
-                        <button class="bg-[#fb2056] h-12 text-white rounded-full w-[11rem]">
-                            <a class="uppercase text-[14px] font-bold">learn more</a>
-                        </button>
+                <h2 class=" mx-[0.5rem] text-sm md:text-lg font-mono">"Embrace the Thrills of Outdoor Exploration and
+                    Create
+                    Lasting Memories!"</h2>
+                <h3 class=" text-[17px] md:text-[18px] font-mono text-gray-800 mt-2">- chatGPT</h3>
+            </div>
+        </section>
+        <section class="flex justify-center">
+            <div class="">
+                <div class="mt-[4rem] text-center">
+                    <h3 class="uppercase md:text-[2rem] font-Montserrat text-[25px] sm:text-[28px]">upcoming events</h3>
+                    <div class="border-b-4 mt-[0.3rem] border-[#fb2056] w-[5rem] mx-auto"></div>
+                </div>
+                <div class="mt-[4rem] md:flex md:space-x-[5rem] mx-5">
+                    <div class="text-center flex flex-col items-center md:items-start ">
+                        <img loading="lazy"
+                            class="w-[25rem] sm:h-[16rem] h-[13rem] md:w-[30rem] md:h-[20rem] rounded-md shadow-lg shadow-gray-700"
+                            src="imgs/hiking-v1.jpg" alt="images">
+                        <h4 class="mt-[3rem] font-Gabarito  md:text-[20px] m-auto">Everest Camp Trek</h4>
+                        <p class=" md:w-[30rem] mt-3 text-gray-700 font-Nanum sm:w-[18rem]">Lorem ipsum dolor sit amet
+                            consectetur
+                            adipisicing elit. Ad a ullam dolor rerum mollitia similique?</p>
+                        <div class="mt-4 m-auto">
+                            <button class="bg-[#fb2056] h-12 text-white rounded-full w-[11rem]">
+                                <a class="uppercase text-[14px] font-bold">learn more</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center mt-7 md:mt-0 flex flex-col items-center md:items-start">
+                        <img loading="lazy"
+                            class="w-[25rem]  sm:h-[16rem] h-[13rem] md:w-[30rem] md:h-[20rem]  rounded-md shadow-lg shadow-gray-700"
+                            src="imgs/walking-v1.jpg" alt="images">
+                        <h4 class="mt-[3rem] font-Gabarito text-[20px]  m-auto">Walking Holidays</h4>
+                        <p class=" md:w-[30rem] mt-3 text-gray-700 font-Nanum sm:w-[18rem]">Lorem ipsum dolor sit amet
+                            consectetur
+                            adipisicing tlit. Ad a ullam polor rerum mollitia similique?</p>
+                        <div class="mt-4  m-auto">
+                            <button class="bg-[#fb2056] h-12 text-white rounded-full w-[11rem]">
+                                <a class="uppercase text-[14px] font-bold">learn more</a>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-    </header>
-    <section class="bg-gray-100 h-[12rem] flex justify-center items-center text-center">
-        <div>
-            <h2 class=" mx-[0.5rem] text-sm md:text-lg font-mono">"Embrace the Thrills of Outdoor Exploration and Create
-                Lasting Memories!"</h2>
-            <h3 class=" text-[17px] md:text-[18px] font-mono text-gray-800 mt-2">- chatGPT</h3>
-        </div>
-    </section>
-    <section class="flex justify-center">
-        <div class="">
-            <div class="mt-[4rem] text-center">
-                <h3 class="uppercase md:text-[2rem] font-Montserrat text-[25px] sm:text-[28px]">upcoming events</h3>
-                <div class="border-b-4 mt-[0.3rem] border-[#fb2056] w-[5rem] mx-auto"></div>
-            </div>
-            <div class="mt-[4rem] md:flex md:space-x-[5rem] mx-5">
-                <div class="text-center flex flex-col items-center md:items-start ">
-                    <img loading="lazy"  class="w-[25rem] sm:h-[16rem] h-[13rem] md:w-[30rem] md:h-[20rem] rounded-md shadow-lg shadow-gray-700"
-                        src="imgs/hiking-v1.jpg" alt="images">
-                    <h4 class="mt-[3rem] font-Gabarito  md:text-[20px] m-auto">Everest Camp Trek</h4>
-                    <p class=" md:w-[30rem] mt-3 text-gray-700 font-Nanum sm:w-[18rem]">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Ad a ullam dolor rerum mollitia similique?</p>
-                    <div class="mt-4 m-auto">
-                        <button class="bg-[#fb2056] h-12 text-white rounded-full w-[11rem]">
-                            <a class="uppercase text-[14px] font-bold">learn more</a>
-                        </button>
-                    </div>
-                </div>
-                <div class="text-center mt-7 md:mt-0 flex flex-col items-center md:items-start">
-                    <img loading="lazy" class="w-[25rem]  sm:h-[16rem] h-[13rem] md:w-[30rem] md:h-[20rem]  rounded-md shadow-lg shadow-gray-700"
-                        src="imgs/walking-v1.jpg" alt="images">
-                    <h4 class="mt-[3rem] font-Gabarito text-[20px]  m-auto">Walking Holidays</h4>
-                    <p class=" md:w-[30rem] mt-3 text-gray-700 font-Nanum sm:w-[18rem]">Lorem ipsum dolor sit amet consectetur
-                        adipisicing tlit. Ad a ullam polor rerum mollitia similique?</p>
-                    <div class="mt-4  m-auto">
-                        <button class="bg-[#fb2056] h-12 text-white rounded-full w-[11rem]">
-                            <a class="uppercase text-[14px] font-bold">learn more</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="h-[40vh] md:h-[85vh] mt-[6rem] section-backgrond">
-    </section>
-    <section class="h-[100vh]">
-    </section>
+        <section class="h-[40vh] md:h-[85vh] mt-[6rem] section-backgrond">
+        </section>
+        <section class="h-[100vh]">
+        </section>
+    </div>
     <script src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
