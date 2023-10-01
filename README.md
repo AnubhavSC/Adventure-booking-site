@@ -10,5 +10,7 @@ Download code with git
 ```bash
   git clone https://github.com/AnubhavSC/Adventure-booking-site
   cd Adventure-booking-site
+
+  npx tailwindcss -i ./css/input.css -o ./css/output.css --watch 
 ```
     
