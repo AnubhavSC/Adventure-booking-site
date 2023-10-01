@@ -7,6 +7,7 @@ module.exports = {
         kanit: 'Kanit',
         Montserrat: 'Montserrat',
         Nanum: 'Nanum Gothic', 
+        Gabarito: 'Gabarito',
       },
     },
   },
