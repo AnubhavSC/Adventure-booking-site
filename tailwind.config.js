@@ -6,7 +6,7 @@ module.exports = {
       fontFamily:{
         kanit: 'Kanit',
         Montserrat: 'Montserrat',
-        Archivo: 'Archivo Black',
+        Nanum: 'Nanum Gothic', 
       },
     },
   },
