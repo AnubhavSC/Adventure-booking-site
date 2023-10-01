@@ -579,6 +579,14 @@ video {
   margin-left: 1.25rem;
 }
 
+.ml-9{
+  margin-left: 2.25rem;
+}
+
+.mr-5{
+  margin-right: 1.25rem;
+}
+
 .mt-2{
   margin-top: 0.5rem;
 }
@@ -593,6 +601,30 @@ video {
 
 .mt-\[0\.3rem\]{
   margin-top: 0.3rem;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
+}
+
+.mt-\[\]{
+  margin-top: ;
+}
+
+.mt-\[-1rem\]{
+  margin-top: -1rem;
+}
+
+.mt-\[-5px\]{
+  margin-top: -5px;
+}
+
+.ml-3{
+  margin-left: 0.75rem;
 }
 
 .flex{
@@ -627,12 +659,20 @@ video {
   height: 2.5rem;
 }
 
+.h-\[2rem\]{
+  height: 2rem;
+}
+
 .h-\[34rem\]{
   height: 34rem;
 }
 
 .h-\[77vh\]{
   height: 77vh;
+}
+
+.h-9{
+  height: 2.25rem;
 }
 
 .w-5{
@@ -687,10 +727,10 @@ video {
   justify-content: space-between;
 }
 
-.space-x-8 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2rem * var(--tw-space-x-reverse));
-  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .self-center{
@@ -709,13 +749,39 @@ video {
   border-radius: 0.125rem;
 }
 
+.border{
+  border-width: 1px;
+}
+
 .border-b-2{
   border-bottom-width: 2px;
+}
+
+.border-b{
+  border-bottom-width: 1px;
+}
+
+.border-t-2{
+  border-top-width: 2px;
+}
+
+.border-t{
+  border-top-width: 1px;
 }
 
 .border-\[\#fb2056\]{
   --tw-border-opacity: 1;
   border-color: rgb(251 32 86 / var(--tw-border-opacity));
+}
+
+.border-black{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-green-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(34 197 94 / var(--tw-border-opacity));
 }
 
 .bg-\[\#fb2056\]{
@@ -733,8 +799,25 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-pink-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 72 153 / var(--tw-bg-opacity));
+}
+
 .p-4{
   padding: 1rem;
+}
+
+.pb-2{
+  padding-bottom: 0.5rem;
+}
+
+.pl-4{
+  padding-left: 1rem;
+}
+
+.pl-3{
+  padding-left: 0.75rem;
 }
 
 .text-center{
@@ -765,16 +848,16 @@ video {
   font-size: 1.9rem;
 }
 
+.text-\[10px\]{
+  font-size: 10px;
+}
+
 .text-\[14px\]{
   font-size: 14px;
 }
 
 .text-\[17px\]{
   font-size: 17px;
-}
-
-.text-\[1rem\]{
-  font-size: 1rem;
 }
 
 .text-lg{
@@ -787,12 +870,20 @@ video {
   line-height: 1.25rem;
 }
 
+.text-\[20px\]{
+  font-size: 20px;
+}
+
 .font-bold{
   font-weight: 700;
 }
 
 .font-extrabold{
   font-weight: 800;
+}
+
+.font-normal{
+  font-weight: 400;
 }
 
 .uppercase{
@@ -802,6 +893,11 @@ video {
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-gray-700{
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .text-gray-800{
@@ -825,9 +921,32 @@ video {
   .background {
     background-attachment: fixed;
   }
+}
+
+.hover\:bg-pink-700:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(190 24 93 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px){
+  .md\:m-auto{
+    margin: auto;
+  }
+
+  .md\:ml-0{
+    margin-left: 0px;
+  }
+
+  .md\:mt-0{
+    margin-top: 0px;
+  }
 
   .md\:block{
     display: block;
+  }
+
+  .md\:flex{
+    display: flex;
   }
 
   .md\:hidden{
@@ -842,8 +961,36 @@ video {
     width: auto;
   }
 
+  .md\:space-x-8 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:border-b-0{
+    border-bottom-width: 0px;
+  }
+
+  .md\:border-t{
+    border-top-width: 1px;
+  }
+
+  .md\:border-t-0{
+    border-top-width: 0px;
+  }
+
   .md\:bg-transparent{
     background-color: transparent;
+  }
+
+  .md\:font-mono{
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .md\:text-\[1\.3rem\]{
@@ -852,6 +999,10 @@ video {
 
   .md\:text-\[1\.5rem\]{
     font-size: 1.5rem;
+  }
+
+  .md\:text-\[17px\]{
+    font-size: 17px;
   }
 
   .md\:text-\[18px\]{
