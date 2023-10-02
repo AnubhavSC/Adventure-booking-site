@@ -31,15 +31,3 @@
     background-repeat: no-repeat;
     background-position: top center;
 }
-
-.section-backgrond{
-    background: linear-gradient(rgba(25, 25, 25, 0.534), rgba(25, 25, 25, 0.445)), url(../imgs/section-bg-img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-@media (min-width: 768px) {
-    .section-backgrond {
-        background-attachment: fixed;
-    }
-}
