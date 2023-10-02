@@ -5,7 +5,7 @@ This website is built using Tailwind CSS, HTML, and a small amount of JavaScript
 
 ## Installation
 
-Download code with git:
+Download code with git in linux:
 
 ```bash
   git clone https://github.com/AnubhavSC/Adventure-booking-site
